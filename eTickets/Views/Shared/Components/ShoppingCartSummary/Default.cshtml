@@ -1,0 +1,11 @@
+﻿@model int
+
+
+@if (Model > 0)
+{
+<li class="nav-item position-relative ">
+        <a class="nav-link text-dark" asp-controller="Orders" asp-action="ShoppingCart">
+        <i class=" bi bi-cart4 position-absolute "></i> <span class="text-light text-bg-danger position-absolute" style="border-radius:50%; background-color:red; padding:0px 2px; left:1px; bottom:3px; ">@Model</span>
+        </a>
+    </li>
+}
